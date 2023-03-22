@@ -1,0 +1,75 @@
+/*-------------------------Start-Go to top btn------------*/
+.go-top {
+  position: fixed;
+  cursor: pointer;
+  text-indent: -9999999;
+  top: 0;
+  right: 15px;
+  color: #fff;
+  background-color: #f74f0c;
+  z-index: 4;
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.9s;
+  border-radius: 50%;
+}
+
+.go-top:hover {
+  background-color: #333;
+  transition: 0.3s;
+}
+
+.go-top.active {
+  top: 98%;
+  transform: translateY(-98%);
+  opacity: 1;
+  visibility: visible;
+}
+
+.go-top i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+.go-top i:last-child {
+  opacity: 0;
+  visibility: hidden;
+  top: 60%;
+}
+
+.go-top:focus,
+.go-top:hover {
+  color: #fff;
+}
+
+.go-top:focus::before,
+.go-top:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.go-top:focus i:first-child,
+.go-top:hover i:first-child {
+  opacity: 0;
+  top: 0;
+  visibility: hidden;
+}
+
+.go-top:focus i:last-child,
+.go-top:hover i:last-child {
+  opacity: 1;
+  visibility: visible;
+  top: 50%;
+}
+
+/*-----------------------End-Go to top btn-----------------*/
+/*# sourceMappingURL=style.css.map */
